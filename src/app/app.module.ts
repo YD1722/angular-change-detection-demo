@@ -48,7 +48,7 @@ import { RunOutsideAngularTriggerComponent } from './components/run-outside-angu
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(APP_ROUTES),
+    RouterModule.forRoot(APP_ROUTES, { relativeLinkResolution: 'legacy' }),
     NoopAnimationsModule,
     MatToolbarModule,
     MatButtonModule,

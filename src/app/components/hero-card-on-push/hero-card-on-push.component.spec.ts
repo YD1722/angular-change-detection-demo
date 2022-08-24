@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HeroCardOnPushComponent } from './hero-card-on-push.component';
 
@@ -6,7 +6,7 @@ describe('HeroCardOnPushComponent', () => {
   let component: HeroCardOnPushComponent;
   let fixture: ComponentFixture<HeroCardOnPushComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ HeroCardOnPushComponent ]
     })

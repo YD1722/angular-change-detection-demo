@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { RunOutsideAngularTriggerComponent } from './run-outside-angular-trigger.component';
 
@@ -6,7 +6,7 @@ describe('RunOutsideAngularTriggerComponent', () => {
   let component: RunOutsideAngularTriggerComponent;
   let fixture: ComponentFixture<RunOutsideAngularTriggerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ RunOutsideAngularTriggerComponent ]
     })

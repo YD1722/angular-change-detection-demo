@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HeroCardAsyncPipeComponent } from './hero-card-async-pipe.component';
 
@@ -6,7 +6,7 @@ describe('HeroCardAsyncPipeComponent', () => {
   let component: HeroCardAsyncPipeComponent;
   let fixture: ComponentFixture<HeroCardAsyncPipeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ HeroCardAsyncPipeComponent ]
     })

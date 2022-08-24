@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ExpressionChangedAfterItHasBeenCheckedErrorDemoComponent } from './expression-changed-after-it-has-been-checked-error-demo.component';
 
@@ -6,7 +6,7 @@ describe('ExpressionChangedAfterItHasBeenCheckedErrorDemoComponent', () => {
   let component: ExpressionChangedAfterItHasBeenCheckedErrorDemoComponent;
   let fixture: ComponentFixture<ExpressionChangedAfterItHasBeenCheckedErrorDemoComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ExpressionChangedAfterItHasBeenCheckedErrorDemoComponent ]
     })
